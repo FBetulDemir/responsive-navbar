@@ -1,0 +1,118 @@
+body{
+    min-height: 100vh;
+    font-family: "Source Sans 3", sans-serif;
+}
+/* navigation bar style starts here */
+
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+.header{
+    border-bottom: 1px solid #E2E8F0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+}
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    margin-left: 5rem;
+}
+
+.nav-link{
+    font-size: 16px;
+    font-weight: 400;
+    color: #242635;
+}
+
+.nav-link:hover{
+    color: #482ff7;
+}
+
+.nav-logo {
+    font-family: "Aldrich", sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    color: #242635;
+}
+@media only screen and (max-width: 600px) {
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.06);
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+}
+
+/* main content style starts here */
+main{
+    font-family: "Poppins", sans-serif;
+}
+.main-content{
+    text-align: center;
+}
+.title{
+    font-size: 90px;
+    font-weight: 500;
+}
+.main-info{
+    font-size: 22px;
+    font-weight: 200;
+}
+
+@media only screen and (max-width: 600px) {
+    .title{
+        font-size: 70px;
+        font-weight: 300;
+    }
+    .main-info{
+        font-size: 12px;
+        font-weight: 100;
+    }
+}
